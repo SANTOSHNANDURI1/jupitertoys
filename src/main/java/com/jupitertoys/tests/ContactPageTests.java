@@ -19,7 +19,7 @@ public class ContactPageTests extends BaseTestSuite{
 		//submitting an empty contact details form
 		contactPage.clickSubmitButton();
 		
-		Assert.assertEquals("Verify Mandatory surname error message", "Forename is required", contactPage.getForenameErrorMessage());
+		Assert.assertEquals("Verify Mandatory surname error message!!", "Forename is required", contactPage.getForenameErrorMessage());
 		Assert.assertEquals("Verify Mandatory email error message", "Email is required", contactPage.getEmailErrorMessage());
 		Assert.assertEquals("Verify Mandatory Message Field error message", "Message is required", contactPage.getMessageFieldErrorMessage());
 		
